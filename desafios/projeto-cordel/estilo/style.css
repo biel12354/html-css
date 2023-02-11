@@ -55,12 +55,13 @@ a:hover {
 }
 
 section {
+    position: relative;
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 3.5vw;
     padding-top: 10vh;
-   padding-bottom: 10vh;
+    padding-bottom: 10vh;
 }
 
 p {
@@ -70,6 +71,7 @@ p {
 .imagem {
     background-color: rgb(54, 54, 54);
     color: white;
+    box-shadow: inset 15px 15px 10px rgba(0, 0, 0, 0.185);
 }
 
 .imagem > p {
