@@ -9,6 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     margin: 0;
+    padding: 0;
     background-color: rgba(100, 245, 100, 0.425);
 }
 
@@ -17,7 +18,7 @@ img {
 }
 
 .pequena {
-    width: 350px;
+    width: 300px;
     display: block;
     margin: auto;
 }
@@ -25,8 +26,6 @@ img {
 header {
     background-image: linear-gradient(to top, #174f30, #3cdb83);
     padding: 10px;
-    margin: 0;
-    min-width: 330px;
 }
 
 header > h1 {
@@ -43,6 +42,7 @@ header > p {
     font-weight: normal;
     font-size: 12px;
     text-align: center;
+    padding-bottom: 30px;
     color: rgb(184, 255, 184);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.651);
 }
@@ -64,11 +64,10 @@ nav > a:hover {
 
 main {
     background-color: white;
-    min-width: 320px;
     max-width: 1000px;
-    margin: auto;
     padding: 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.185);
+    margin: auto;
 }
 
 section > h1 {
@@ -81,7 +80,6 @@ section > h1 {
     font-family: "android";
     background-image: linear-gradient(to right, #beebd0, white);
     font-size: 17px;
-    padding-left: 6px;
 }
 
 section > p {
@@ -116,7 +114,8 @@ ul > li {
 }
 
 article > p {
-    margin: 10px;
+    margin: 20px;
+    text-align: justify;
     text-indent: 20px;
 }
 
@@ -142,14 +141,12 @@ footer {
     text-align: center;
     font-size: 12px;
     margin: 0;
-    min-width: 330px;
 }
 
 aside {
     background-color: white;
     padding: 15px;
     max-width: 1000px;
-    min-width: 330px;
     margin: auto;
     margin-bottom: 10px;
     border-radius: 0px 0px 10px 10px;
@@ -160,7 +157,6 @@ aside {
     background-color: #174f30;
     display: block;
     padding: 15px;
-    min-width: 320px;
     max-width: 1000px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.185);
