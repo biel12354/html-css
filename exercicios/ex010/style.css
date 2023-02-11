@@ -1,0 +1,11 @@
+a {
+    transition: .2s;
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgba(211, 211, 211, 0.527);
+}
+
+a:hover{
+    background-color: black;
+    color: white;
+}
