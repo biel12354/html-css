@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            height: 96vh;
+            background-color: purple;
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+        }
+
+        
+
+        #caixa {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            height: 300px;
+            width: 700px;
+            background-color: blue;
+        }
+
+        #conteudo {
+            position: relative;
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            width: 400px;
+            height: 200px;
+            background-color: yellow;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section  id="container">
+        <div id="caixa">
+            <article id="conteudo">
+
+            </article>
+        </div>
+    </section>
+</body>
+</html>
