@@ -162,6 +162,10 @@ aside {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.185);
 }
 
+#video > iframe {
+    height: 500px;
+}
+
 span  {
     color: #174f30;
     font-weight: bold;
