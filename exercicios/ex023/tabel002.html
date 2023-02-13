@@ -9,6 +9,7 @@
         table {
             border-collapse: collapse;
             width: 400px;
+            position: relative;
         }
 
         td, th {
@@ -21,6 +22,12 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         caption {
             padding: 10px;
             background-color: black;
@@ -31,6 +38,10 @@
 
         .num {
             text-align: right;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgba(211, 211, 211, 0.288);
         }
     </style>
 </head>
