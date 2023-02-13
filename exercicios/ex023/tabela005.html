@@ -10,12 +10,16 @@
             font-family: Arial, Helvetica, sans-serif;
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
             font-size: 1.3em;
             font-weight: bolder;
             padding: 8px;
+            border: 1px solid black;
+            background: gray;
+            color: white;
         }
 
         th, td {
@@ -24,75 +28,84 @@
             color: white;
         }
 
-        .c1, .c3 {
+        .c1, .c3{
             background-color: dimgray;
         }
 
-        .c2, .c4 {
+        .c2, .c4{
             background-color: black;
         }
 
         .container {
             overflow-x: auto;
+            position: relative;
+        }
+
+        th {
+            position: sticky;
+            top: -1px;
+            background-color: black;
         }
     </style>
 </head>
 <body>
     <h1>Exercício de Tabela</h1>
-    <div class="container">
-        <table>
-            <colgroup>
-                <col class="c1">
-                <col class="c2">
-                <col class="c3">
-                <col class="c4">
-            </colgroup>
-            <caption>Cadastro</caption>
-            <tr>
-                <th scope="col">Nome</th>
-                <th scope="col">Sexo</th>
-                <th scope="col">Idade</th>
-                <th scope="col">Profissão</th>
-            </tr>
-            <tr>
-                <td>Ana Maria</td>
-                <td>F</td>
-                <td>25</td>
-                <td>Jornalista</td>
-            </tr>
-            <tr>
-                <td>Claúdio</td>
-                <td>M</td>
-                <td>28</td>
-                <td>Programador</td>
-            </tr>
-            <tr>
-                <td>Gustavo</td>
-                <td>M</td>
-                <td>42</td>
-                <td>Professor</td>
-            </tr>
-            <tr>
-                <td>Hélio</td>
-                <td>M</td>
-                <td>19</td>
-                <td>Vendedor</td>
-            </tr>
-            <tr>
-                <td>Maria</td>
-                <td>F</td>
-                <td>39</td>
-                <td>Médica</td>
-            </tr>
-            <tr>
-                <td>Otávio</td>
-                <td>M</td>
-                <td>22</td>
-                <td>Nutricionista</td>
-            </tr>
-        </table>
+    <table>
+        <colgroup>
+            <col class="c1">
+            <col class="c2">
+            <col class="c3">
+            <col class="c4">
+        </colgroup>
+        <caption class="titulo">Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Claúdio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+    </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quas mollitia fuga reprehenderit. A deserunt qui nemo molestiae, blanditiis reprehenderit aperiam corporis, sunt nisi consequatur inventore impedit mollitia quam et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure harum dolorum maxime accusamus autem sequi voluptatibus ullam porro quidem, provident ipsum nisi at in amet. Numquam repudiandae qui doloribus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita neque nesciunt ratione optio alias. Cumque assumenda similique animi iure porro error minus cum rem, a saepe quasi velit perferendis! Cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quas mollitia fuga reprehenderit. A deserunt qui nemo molestiae, blanditiis reprehenderit aperiam corporis, sunt nisi consequatur inventore impedit mollitia quam et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure harum dolorum maxime accusamus autem sequi voluptatibus ullam porro quidem, provident ipsum nisi at in amet. Numquam repudiandae qui doloribus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita neque nesciunt ratione optio alias. Cumque assumenda similique animi iure porro error minus cum rem, a saepe quasi velit perferendis! Cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quas mollitia fuga reprehenderit. A deserunt qui nemo molestiae, blanditiis reprehenderit aperiam corporis, sunt nisi consequatur inventore impedit mollitia quam et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure harum dolorum maxime accusamus autem sequi voluptatibus ullam porro quidem, provident ipsum nisi at in amet. Numquam repudiandae qui doloribus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita neque nesciunt ratione optio alias. Cumque assumenda similique animi iure porro error minus cum rem, a saepe quasi velit perferendis! Cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quas mollitia fuga reprehenderit. A deserunt qui nemo molestiae, blanditiis reprehenderit aperiam corporis, sunt nisi consequatur inventore impedit mollitia quam et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure harum dolorum maxime accusamus autem sequi voluptatibus ullam porro quidem, provident ipsum nisi at in amet. Numquam repudiandae qui doloribus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita neque nesciunt ratione optio alias. Cumque assumenda similique animi iure porro error minus cum rem, a saepe quasi velit perferendis! Cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quas mollitia fuga reprehenderit. A deserunt qui nemo molestiae, blanditiis reprehenderit aperiam corporis, sunt nisi consequatur inventore impedit mollitia quam et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure harum dolorum maxime accusamus autem sequi voluptatibus ullam porro quidem, provident ipsum nisi at in amet. Numquam repudiandae qui doloribus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita neque nesciunt ratione optio alias. Cumque assumenda similique animi iure porro error minus cum rem, a saepe quasi velit perferendis! Cupiditate?</p>
 
-    </div>
-    
 </body>
 </html>
