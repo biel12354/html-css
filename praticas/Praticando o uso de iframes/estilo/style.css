@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p3/8440579-fundo-escuro-com-focos-ilustracao-de-fundo-gratis-vetor.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#celular {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("https://nubank.com.br/_next/static/images/9a3afd73ef19defbe76c03f014182fe6-device-frame-dark@0.75x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 231px;
+    height: 473px;
+}
+
+#celular > iframe {
+    position: relative;
+    top: 45px;
+    left: 10px;
+    width: 207px;
+    height: 390px;
+}
