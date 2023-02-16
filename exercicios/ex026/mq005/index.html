@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body onresize="mudoutamanho()">
+    <header>
+        <h1>Testando media querys</h1>
+        <input type="checkbox" name="menu" id="imenu" style="display: none;" onclick="clicar()">
+        <label for="imenu"><i class="material-symbols-outlined" id="burguer">menu</i></label>
+        <menu id="itens">
+            <ul>
+                <li>Opção 1</li>
+                <li>Opção 2</li>
+                <li>Opção 3</li>
+                <li>Opção 4</li>
+                <li>Opção 5</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h1>Testando Media Querys</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aspernatur quos eveniet libero non error quidem reiciendis sint mollitia consequatur. Cumque nesciunt explicabo adipisci molestiae numquam! Asperiores sapiente doloremque voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cum laboriosam vel quod debitis eos quasi? Vel ducimus provident iure, dolor atque et aut quis totam molestias adipisci odio facere.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aspernatur quos eveniet libero non error quidem reiciendis sint mollitia consequatur. Cumque nesciunt explicabo adipisci molestiae numquam! Asperiores sapiente doloremque voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cum laboriosam vel quod debitis eos quasi? Vel ducimus provident iure, dolor atque et aut quis totam molestias adipisci odio facere.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aspernatur quos eveniet libero non error quidem reiciendis sint mollitia consequatur. Cumque nesciunt explicabo adipisci molestiae numquam! Asperiores sapiente doloremque voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cum laboriosam vel quod debitis eos quasi? Vel ducimus provident iure, dolor atque et aut quis totam molestias adipisci odio facere.</p>
+        </article>
+    </main>
+    <script>
+        let menu = document.getElementById("itens")
+        function mudoutamanho(){
+            if (window.innerWidth >= 600){
+                menu.style.display = "block"
+            } else {
+                menu.style.display = "none"
+            }
+        }
+
+        function clicar(){
+            let check = document.getElementById("imenu")
+            if (check.checked == true){
+                menu.style.display = "none"
+            } else {
+                menu.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>

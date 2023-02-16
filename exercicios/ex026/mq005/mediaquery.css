@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* Configuração para impressoras */
+@media print {
+    menu {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    main::after {
+        content: "Impressão configurada em atualizada em 16 de fevereiro de 2023 as 00:53";
+    }
+}
+/* Configurações para tablet */
+@media (min-width: 600px) {
+    main {
+        max-width: 800px;
+    }
+
+    #itens{
+        display: block;
+        text-align: left;
+    }
+    
+    #burguer {
+        display: none;
+    }
+
+    ul li{
+        margin: 0px 0px 0px 10px;
+        border-radius: 10px 10px 0px 0px;
+        display: inline-block;
+    }
+
+    ul li:hover{
+        transform: translate(2px, -2px);
+    }
+}
+
+/* Configurações para Desktop */
+
+
+/* Configurações para Telas grandes */
+
