@@ -8,105 +8,32 @@
 }
 
 body, html {
-    width: 100vw;
+    background-color: rgb(83, 42, 121);
     height: 100vh;
+    width: 100vw;
 }
 
-body {
-    background-color: #5e2c81;
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
 }
 
-#caixa {
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 220px;
-    
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
 }
 
-#img {
-    height: 150px;
-    background-image: url("https://img.freepik.com/fotos-premium/paisagem-arquitetonica-e-rua-urbana-do-predio-de-escritorios-lujiazui-em-xangai_1417-12180.jpg?w=2000");
-    background-position: center center;
-    background-attachment: fixed;
+section#login > div#img {
+    background: url("https://thumbs.dreamstime.com/b/paisagem-urbana-e-pr%C3%A9dios-de-luxo-no-centro-da-metr%C3%B3pole-distrito-comercial-do-cidade-em-vista-panor%C3%A2mica-224776460.jpg") no-repeat;
     background-size: cover;
-    border-radius: 10px 10px 0px 0px;
-}
-
-#login {
-    background-color: white;
-    padding: 10px;
-    border-radius: 0px 0px 10px 10px;
-}
-
-#login > h1{
-    text-align: center;
-    font-size: 1.3em;
-    padding-bottom: 10px;
-}
-
-#login p {
-    font-size: .8em;
-    padding-bottom: 10px;
-}
-
-section {
-    border-collapse: collapse;
-    background-color: purple;
-    display: inline-block;
-    border-radius: 10px;
-    margin-bottom: 2px;
-}
-
-input[type="password"], input[type="email"]{
-    background-color: rgb(159, 209, 192);
-    padding: 6px;
-    width: 170px;
-    
-    border-radius: 10px;
-    border: 1px solid purple;
-}
-
-i {
-    right: -3px;
-    position: relative;
-    text-align: right;
-    vertical-align: middle;
-    color: white;
-}
-
-a, input[type="submit"]{
-    border-radius: 5px;
-    border: none;
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 2px;
-}
-
-input:focus {
-    transition-delay: .4s;
-    background-color: white;
-}
-
-input {
-    transition-delay: .4s;
-}
-
-input[type="submit"] {
-    background-color: rgb(97, 190, 159);
-    color: white;
-}
-
-a {
-    font-size: 0.8em;
-    text-decoration: none;
-    text-align: center;
-    border: 1px solid rgb(97, 190, 159);
-    color: rgb(42, 83, 70);
-}
-
-span {
-    vertical-align: middle;
+    background-position: center center;
+    height: 200px;
 }
