@@ -9,6 +9,7 @@
 
     section#login {
         width: 90vw;
+        height: 280px;
     }
 
     section#login > div#img {
@@ -22,10 +23,6 @@
         float: right;
         width: 70%;
     }
-
-    form div input#iemail, input#isenha {
-        width: 92%;
-    }
 }
 
 @media (min-width: 992px){
@@ -34,7 +31,8 @@
     }
 
     section#login {
-        width: 950px;
+        max-width: 1200px;
+        height: 280px;
     }
 
     section#login > div#img {

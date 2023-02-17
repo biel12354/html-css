@@ -23,16 +23,18 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;
     width: 250px;
+    height: 490px;
     border-radius: 20px;
-    transition: .1s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
 }
 
 section#login > div#img {
-    background: url("https://thumbs.dreamstime.com/b/paisagem-urbana-e-pr%C3%A9dios-de-luxo-no-centro-da-metr%C3%B3pole-distrito-comercial-do-cidade-em-vista-panor%C3%A2mica-224776460.jpg") no-repeat;
+    background: url("https://img.freepik.com/fotos-premium/paisagem-arquitetonica-e-rua-urbana-do-predio-de-escritorios-lujiazui-em-xangai_1417-12180.jpg?w=2000") no-repeat;
     background-size: cover;
     background-position: center center;
     height: 200px;
@@ -53,72 +55,64 @@ div#formulario > p{
     margin-bottom: 10px;
 }
 
-section#login form > div#email, div#senha {
-    width: 100%;
+section#login form > .campo {
     background-color: #5e2c81;
+    height: 40px;
+    margin-top: 3px;
+    border-radius: 8px;
     padding: 2px;
-    margin-bottom: 2px;
-    border-radius: 15px;
 }
 
-form div input#iemail, input#isenha {
-    background-color: #94d1cd;
-    outline: none;
-    border: 0;
-    width: 84%;
-    border-radius: 10px;
-    padding: 6px;
-    transition: .8s;
-}
-
-form div input#iemail:focus, input#isenha:focus {
-    outline: 1px solid black;
-    background-color: #d3ebe9;
-}
-
-section#login form  div#email i, div#senha i {
+div.campo > label i {
     position: relative;
-    right: -2px;
+    left: 2px;
+    font-size: 2em;
     color: white;
-    font-size: 30px;
     vertical-align: middle;
 }
 
-div#logar > input {
-    background-color: #4faaa4;
-    color: white;
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+div.campo > input {
+    height: 100%;
+    width: calc(100% - 37px);
     border: 0;
-    transition: .4s;
+    border-radius: 8px;
+}
+
+div.campo > input::placeholder {
+    padding-left: 5px;
+}
+
+div#logar > input {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    background-color: #3e9d96;
+    color: white;
+    border: 0;
 }
 
 div#logar > input:hover {
-    background-color: #74cac4;
+    background-color: #296763;
     cursor: pointer;
 }
 
-div#formulario form > a {
-    transition: .4s;
-    font-size: .9em;
-    display: block;
+div#formulario form a {
     text-decoration: none;
-    border: 1px solid #4faaa4;
+    line-height: 40px;
+    margin-top: 5px;
+    height: 40px;
     text-align: center;
-    padding: 10px;
-    width: 100%;
-    color: #4faaa4;
-    border-radius: 5px;
+    display: block;
+    color: #3e9d96;
+    border: 1px solid #3e9d96;
 }
 
-div#formulario form > a:hover {
-    background-color: #4faaa42a;
+div#formulario form a:hover {
+    color: black;
+    border-color: black;
 }
 
-div#formulario form > a > i {
+#icone {
     font-size: 18px;
     vertical-align: middle;
 }

@@ -17,18 +17,18 @@
                 <h1>Login</h1>
                 <p>Seja bem vindo(a) novamente, Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
                 <form action="#">
-                    <div id="email">
-                        <i class="material-symbols-outlined">person</i>
+                    <div class="campo">
+                        <label for="iemail"><i class="material-symbols-outlined">person</i></label>
                         <input type="email" name="email" id="iemail" required placeholder="Seu email">
                     </div>
-                    <div id="senha">
-                        <i class="material-symbols-outlined">key</i>
-                        <input type="password" name="senha" id="isenha" placeholder="Sua senha">
+                    <div class="campo">
+                        <label for="isenha"><i class="material-symbols-outlined">key</i></label>
+                        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="Sua senha">
                     </div>
                     <div id="logar">
-                        <input type="button" value="Entrar">
+                        <input type="submit" value="Entrar">
                     </div>
-                    <a href="#">Esqueci a senha <i class="material-symbols-outlined">email</i></a>
+                    <a href="#">Esqueci a senha <i class="material-symbols-outlined" id="icone">email</i></a>
                 </form>
             </div>
         </section>
